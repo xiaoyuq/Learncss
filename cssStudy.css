@@ -1,0 +1,87 @@
+body{
+    counter-reset: mynum;
+}
+#jiakuang{
+    border: 1px solid #E6E6E6;
+    background: url("img/Blue-rule.png");
+    background-repeat:repeat-x;
+    background-position:80% 80%;
+}
+p{
+
+    color:blue;
+    font-weight:bold;
+
+
+
+}
+#underline{
+    background: url("img/Blue-rule.png");
+}
+#underline strong{
+    color:red;
+    text-decoration: underline;
+    font:20px "Comic Sans MS", cursive;
+
+}
+p.key{
+    color:green;
+    background: url("img/Blue-rule.png");
+
+}
+#principal{
+    font-weight:bolder;
+}
+strong{color:red;}
+strong.a{color:orange;}
+.b{ color:green}
+.c{color:green}
+#first{font-style: italic;
+        color:black}
+#secong{font-style: oblique}
+
+#table1{
+    margin: 0 100px;
+}
+#table1 tr td{
+    padding: 0 30px;/*内*/
+}
+#table1 tr.tr1 td:first-child{  /*一行一列的元素被线贯穿*/
+    text-decoration: line-through;
+}
+#table1 tr.tr2 td:first-child+td{   /*二行二列的元素打上下划线*/
+    text-decoration: underline;
+}
+#table1 td:first-child+td+td{   /*所有行的第三列均有下划线*/
+    text-decoration: underline;
+}
+
+
+a.homepage:link,a.homepage:visited{
+    padding: 1px 10px 1px 10px;
+    color:#fff;
+    background :#555;
+    border-radius:3px ;/*添加圆角边框：*/
+    font-family: Georgia, serif;
+    font-size:14px;
+    font-style: italic;
+    text-decoration: none;
+}
+a.homepage:hover, a.homepage:focus, a.homepage:active {
+    background-color: #666;
+}/*使得鼠标放在上面的时候变成另外一种颜色灰色*/
+
+p.numbered:before {
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+}
+h3.numbered {counter-reset: mynum;}
+h3{border-top: 10px solid gray;}
+li {
+    list-style: lower-roman;
+    margin-bottom: 8px;
+}
+img.pic{
+    border: 20px solid green;
+}
